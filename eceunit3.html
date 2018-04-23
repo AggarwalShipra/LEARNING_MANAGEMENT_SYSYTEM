@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<title>DIGITAL Electronics unit 3</title>
+</title>
+<script>
+function calc()
+{
+var reply=window.confirm("Are you sure you want to submit?");
+if(reply){
+var s=0;var p;var c;
+if(document.getElementById("a1").checked) 
+{s=s+1;}
+if(document.getElementById("a2").checked) 
+{s=s+1;}
+if(document.getElementById("b3").checked) 
+{s=s+1;}
+if(document.getElementById("a4").checked) 
+{s=s+1;}
+if(document.getElementById("a5").checked)
+ {s=s+1;}
+ if(document.getElementById("a6").checked)
+ {s=s+1;}
+ if(document.getElementById("d7").checked)
+ {s=s+1;}
+ if(document.getElementById("b8").checked)
+ {s=s+1;}
+ if(document.getElementById("b9").checked)
+ {s=s+1;}
+ if(document.getElementById("b10").checked)
+ {s=s+1;}
+  p=s*10;
+if(s==10)
+{c="Excellent!!";}
+else if(s<10 && s>=9)
+{c="Very Good!!";}
+else if(s<9 && s>=8)
+{c="Good!!";}
+else if(s<8 && s>=7)
+{c="Average!!";}
+else{c="Poor!! Work hard!!";}
+window.alert(c+" Your score is "+p+"%");
+window.open("practice.html","_self");
+}
+}
+</script>
+</head>
+<body bgcolor="#38404f" style="color:white;">
+<h1>DIGITAL Electronics unit 3</h1><br>
+<hr>
+<form>
+<b>1. Convert hexadecimal value 16 to decimal</b><br>
+<input type="radio" name="q1" id="a1">22<br>
+<input type="radio" name="q1" id="b1">16<br>
+<input type="radio" name="q1" id="c1">10<br>
+<input type="radio" name="q1" id="d1">None of These<br><br><br>
+<b>2. Convert the following decimal number to 8-bit binary.187</b><br>
+<input type="radio" name="q2" id="a2">10111011<sub>2</sub><br>
+<input type="radio" name="q2" id="b2">11011101<sub>2</sub><br>
+<input type="radio" name="q2" id="c2">10111101<sub>2</sub><br>
+<input type="radio" name="q2" id="d2">10111100<sub>2</sub><br><br><br>
+<b>3. Convert binary 111111110010 to hexadecimal</b><br>
+<input type="radio" name="q3" id="a3">EE2<br>
+<input type="radio" name="q3" id="b3">FF2<br>
+<input type="radio" name="q3" id="c3">2FE<br>
+<input type="radio" name="q3" id="d3">FD2<br><br><br>
+<b>4. The output of an AND gate with three inputs, A, B, and C, is HIGH when ________.?<br>	
+<input type="radio" name="q4" id="a4">A=1,B=1,C=1<br>
+<input type="radio" name="q4" id="b4">A=1,B=1,C=0<br>
+<input type="radio" name="q4" id="c4">A=1,B=0,C=1<br><br>
+<input type="radio" name="q4" id="d4">A=0,B=1,C=1<br><br><br><br>
+<b>5. If a 3-input NOR gate has eight input possibilities, how many of those possibilities will result in a HIGH output?<br>	
+<input type="radio" name="q5" id="a5">1<br>
+<input type="radio" name="q5" id="b5">2<br>
+<input type="radio" name="q5" id="c5">7<br>
+<input type="radio" name="q5" id="d5">8<br><br><br>
+<b>6. If a signal passing through a gate is inhibited by sending a LOW into one of the inputs, and the output is HIGH, the gate is a(n)<br>	
+<input type="radio" name="q6" id="a6">AND<br>
+<input type="radio" name="q6" id="b6">NAND<br>
+<input type="radio" name="q6" id="c6">NOR<br>
+<input type="radio" name="q6" id="d6">None<br><br><br><br>
+<b>7.When used with an IC, what does the term "QUAD" indicate?
+<input type="radio" name="q7" id="a7">8 circuit<br>
+<input type="radio" name="q7" id="b7">6 circuit<br>
+<input type="radio" name="q7" id="c7">5 circuit<br>
+<input type="radio" name="q7" id="d7">4 circuit;<br><br><br><br>
+<b>8. What are the pin numbers of the outputs of the gates in a 7432 IC?<br>	
+<input type="radio" name="q8" id="a8">1,2,3,4<br>
+<input type="radio" name="q8" id="b8">3,6,8,11<br>
+<input type="radio" name="q8" id="c8">1,4,8,11<br>
+<input type="radio" name="q8" id="d8">3,6,10,13<br><br><br><br>
+<b>9.How many inputs of a four-input AND gate must be HIGH in order for the output of the logic gate to go HIGH?<br>	
+<input type="radio" name="q9" id="a9">any 1<br>
+<input type="radio" name="q9" id="b9">all 4<br>
+<input type="radio" name="q9" id="c9">any 2<br>
+<input type="radio" name="q9" id="d9">any 3<br><br><br><br>
+<b>10. What is the circuit number of the IC that contains four two-input AND gates in standard TTL?<br>	
+<input type="radio" name="q10" id="a10">7402<br>
+<input type="radio" name="q10" id="b10">7408<br>
+<input type="radio" name="q10" id="c10">7432<br>
+<input type="radio" name="q10" id="d10">7486<br><br><br><br>
+<hr>
+<input type="button" onclick="calc()" value="SUBMIT"style="background-color:#212F3C;cursor:pointer;color:white">
+<input type="reset" value="RESET" style="background-color:#212F3C;cursor:pointer;color:white">
+</form>
+</body>
+</html>

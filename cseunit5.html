@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<title>OBJECT ORIENTED programming unit 5</title>
+</title>
+<script>
+function calc()
+{
+var reply=window.confirm("Are you sure you want to submit?");
+if(reply){
+var s=0;var p;var c;
+if(document.getElementById("a1").checked) 
+{s=s+1;}
+if(document.getElementById("c2").checked) 
+{s=s+1;}
+if(document.getElementById("a3").checked) 
+{s=s+1;}
+if(document.getElementById("a4").checked) 
+{s=s+1;}
+if(document.getElementById("b5").checked)
+ {s=s+1;}
+ if(document.getElementById("a6").checked)
+ {s=s+1;}
+ if(document.getElementById("d7").checked)
+ {s=s+1;}
+ if(document.getElementById("b8").checked)
+ {s=s+1;}
+ if(document.getElementById("b9").checked)
+ {s=s+1;}
+ if(document.getElementById("b10").checked)
+ {s=s+1;}
+  p=s*10;
+if(s==10)
+{c="Excellent!!";}
+else if(s<10 && s>=9)
+{c="Very Good!!";}
+else if(s<9 && s>=8)
+{c="Good!!";}
+else if(s<8 && s>=7)
+{c="Average!!";}
+else{c="Poor!! Work hard!!";}
+window.alert(c+" Your score is "+p+"%");
+window.open("practice.html","_self");
+}
+}
+</script>
+</head>
+<body bgcolor="#38404f" style="color:white;">
+<h1>OBJECT ORIENTED programming unit 5</h1><br>
+<hr>
+<form>
+<b>1. Does the data type of all elements in the union will be same.</b><br>
+<input type="radio" name="q1" id="a1">True<br>
+<input type="radio" name="q1" id="b1">False<br>
+<input type="radio" name="q1" id="c1">Not Always<br>
+<input type="radio" name="q1" id="d1">None of These<br><br><br>
+<b>2. A pointer is</b><br>
+<input type="radio" name="q2" id="a2">A keyword used to create variables<br>
+<input type="radio" name="q2" id="b2">A variable that stores address of an instruction<br>
+<input type="radio" name="q2" id="c2">A variable that stores address of other variable<br>
+<input type="radio" name="q2" id="d2">All of these<br><br><br>
+<b>3. Output of<br>
+#include<stdio.h>
+int main()
+{
+    cout("India", "BIX\n");
+    return 0;
+}</b><br>
+<input type="radio" name="q3" id="a3">ERROR<br>
+<input type="radio" name="q3" id="b3">INDIA<br>
+<input type="radio" name="q3" id="c3">India BIX<br>
+<input type="radio" name="q3" id="d3">BIX<br><br><br>
+<b>4. What is (void*)0?<br>	
+<input type="radio" name="q4" id="a4">Representation of NULL pointer<br>
+<input type="radio" name="q4" id="b4">Representation of void pointer<br>
+<input type="radio" name="q4" id="c4">Error<br><br>
+<input type="radio" name="q4" id="d4">None of above<br><br><br><br>
+<b>5. What would be the equivalent pointer expression for referring the array element a[i][j][k][l]<br>	
+<input type="radio" name="q5" id="a5">((((a+i)+j)+k)+l)<br>
+<input type="radio" name="q5" id="b5">*(*(*(*(a+i)+j)+k)+l)<br>
+<input type="radio" name="q5" id="c5">(((a+i)+j)+k+l)<br>
+<input type="radio" name="q5" id="d5">((a+i)+j+k+l)<br><br><br><br>
+<b>6.The operator used to get value at address stored in a pointer variable is<br>	
+<input type="radio" name="q6" id="a6">*<br>
+<input type="radio" name="q6" id="b6">& <br>
+<input type="radio" name="q6" id="c6">&&<br>
+<input type="radio" name="q6" id="d6">None<br><br><br><br>
+<b>7.Which of the following statements correctly declare a function that
+ receives a pointer to pointer to a pointer to a float and returns a pointer to a pointer to a pointer to a pointer to a float?<br>		
+<input type="radio" name="q7" id="a7">float **fun(float***);<br>
+<input type="radio" name="q7" id="b7">float *fun(float**);<br>
+<input type="radio" name="q7" id="c7">float fun(float***);<br>
+<input type="radio" name="q7" id="d7">float ****fun(float***);<br><br><br><br>
+<b>8. Which of the following statements correct about k used in the below statement?
+char ****k;<br>	
+<input type="radio" name="q8" id="a8">k is a pointer to a pointer to a pointer to a char<br>
+<input type="radio" name="q8" id="b8">k is a pointer to a pointer to a pointer to a pointer to a char<br>
+<input type="radio" name="q8" id="c8">k is a pointer to a char pointer<br>
+<input type="radio" name="q8" id="d8">k is a pointer to a pointer to a char<br><br><br><br>
+<b>9. Are the expression *ptr++ and ++*ptr are same?<br>	
+<input type="radio" name="q9" id="a9">TRUE<br>
+<input type="radio" name="q9" id="b9">FALSE<br>
+<input type="radio" name="q9" id="c9">None<br>
+<input type="radio" name="q9" id="d9">BOTH<br><br><br><br>
+<b>10. Are the three declarations char **apple, char *apple[], and char apple[][] same<br>	
+<input type="radio" name="q10" id="a10">TRUE<br>
+<input type="radio" name="q10" id="b10">FALSE<br>
+<input type="radio" name="q10" id="c10">NONE<br>
+<input type="radio" name="q10" id="d10">BOTH<br><br><br><br>
+<hr>
+<input type="button" onclick="calc()" value="SUBMIT"style="background-color:#212F3C;cursor:pointer;color:white">
+<input type="reset" value="RESET" style="background-color:#212F3C;cursor:pointer;color:white">
+</form>
+</body>
+</html>

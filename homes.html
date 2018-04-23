@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<title>Home Page</title>
+<script>
+function back1()
+{
+document.getElementById("teacher").innerHTML="By Neha sharma:";
+document.getElementById("msg").innerHTML="Your Presentation for Lab at home would Be taken in respective tutorials.Be ready for the same.";
+}
+function back()
+{
+document.getElementById("teacher").innerHTML="By Examination Department:";
+document.getElementById("msg").innerHTML="Date sheet for End term Examination Has been uploaded.Follow path LMS Navigation -----> Examination Seating Plan";
+}
+function front()
+{
+document.getElementById("teacher").innerHTML="By Kirti:";
+document.getElementById("msg").innerHTML="List of topic of presentation has been uplaoded.Submission date is 24-april-2017.Come in formal on the day of presentation.";
+}
+function front1()
+{
+document.getElementById("teacher").innerHTML="By Nahita Pathania:";
+document.getElementById("msg").innerHTML="Your CA3 will be held on 7th April.The platform for the test is HackerEarth.Bring your fully charged laptop.";
+}
+</script>
+<style>
+body,html{
+padding:0;
+margin:0;}
+.h
+{
+background-color:rgba(61, 100, 140,0.5);
+width:101.75%;
+height:100px;
+margin:-25px -25px 0px -25px;
+}
+ul 
+{
+background-color:rgb(0, 86, 119);
+width:98%;
+height:50px;
+margin:0px -15px 0px -15px;
+list-style-type: none;
+overflow: hidden;
+}
+li 
+{
+float: left;
+}
+li a, .dropbtn 
+{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn 
+{
+background-color:rgb(67, 117, 198);
+}
+li.dropdown 
+{
+display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FEFCFF;
+    min-width: 160px;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color:rgb(92, 152, 249);
+color:white
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+}
+.main
+{
+height:515px;
+width:100%;
+background-color:#aecbf9;
+display:inline-flex;
+}
+#intro
+{
+top:0px;
+right:0px;
+height:650px;
+width:20%;
+background-color:#ccdfff;
+}
+#shortcut
+{
+height:650px;
+width:80%;
+background-color:#f4f8ff;
+float:center;
+}
+</style>
+</head>
+<body style="background-size:100%;">
+<div class="h">
+<img src="./images/book1.png" style="width:60px;height:45px;float:left;position:realtive;margin-top:35px;margin-left:20px;">
+<h2 style="font-size:70px;font-family:Aldhabi;color:#dcefed;text-align:center;float:top;margin-top:15px;size:100%;">Learning Management System
+<img src="./images/book1.png" style="width:60px;height:45px;float:right;margin-top:35px;margin-right:6px;"></h2>
+</div>
+<div class="h2">
+<ul>
+<li class="dropdown">
+   <a href="#" class="dropbtn">Hello User!!</a>
+   <div class="dropdown-content">
+      <a href="LMS.html">Log Out</a>
+	  </div>
+<li class="dropdown">
+   <a href="#" class="dropbtn">LMS Navigation</a>
+   <div class="dropdown-content">
+   <a href="assign.html">Assignment</a>
+   <a href="exam.html">Examination Pattren</a>
+   <a href="seating.html">Examination Seating Plan</a>
+   <a href="feeedback.html">FeedBack</a>
+   <a href="instruction.html">Instruction Plan</a>
+   <a href="mycourses.html">My Courses</a>
+   <a href="practice.html">Practice Question Paper</a>
+   <a href="scheme.html">Program Scheme</a>
+   <a href="re.html">Registeration</a>
+   <a href="result.html">Results</a>
+   <a href="time.html">Time Table</a>
+   </div>
+	<li><a href="library.html">Online Library</a></li>
+	<li><a href="about.html">About Us</a></li>
+	<li><a href="help.html">Help</a></li>
+	<a href="homes.html"><img src="./images/home.png" style="width:40px;height:30px;float:right;margin:10px;5px;"></a>
+	</ul>
+</div>
+<div class="main">
+<div id="intro">
+<center>
+<img src="./images/lms10.png" id="imglogo" style="height:150px;width:150px;border-radius:40%;margin:10px 50px;" onmouseover='document.getElementById("imglogo").src="./images/lms9.jpg"' onmouseout='document.getElementById("imglogo").src="./images/lms10.png"'>
+<h4 style="text-align:center;color:#373666;margin:20px 30px;font-size:34px;">Welcome User!!!</h4>
+Quick Links....<br><br>
+<a href="attendance.html"><img src="./images/attend.png" style="height:120px;width:120px;"></a> <a href="time.html"><img src="./images/ttable.png" style="height:120px;width:120px;"></a>
+<br><br><a href="library.html"><img src="./images/lib.jpg" style="height:120px;width:120px;border-radius:100%;"></a> <a href="feeedback.html"><img src="./images/feed.png" style="height:120px;width:120px;"></a>
+</center>
+</div>
+<div id="shortcut">
+<p style="padding:15px;margin:70px 100px;background-color:#426972;border:5px solid white;color:#fff2fe;width:40%;height:30%;float:right;">
+<span style="align:center;font-size:35px;font-family:Colonna MT;">My Messages</span><br>
+<span id="teacher" style="font-family:Bell MT;color:#fffedd">By Nahita Pathania:</span><br>
+<span id="msg">Your CA3 will be held on 7th April.The platform for the test is HackerEarth.
+Bring your fully charged laptop.</span><br><br><br>
+<img src="./images/arrowback.png" style="width:100px;height:70px;align:center;cursor:pointer;" onclick="back()" ondblclick="back1()">
+<img src="./images/arrow.png" style="width:100px;height:70px;align:center;float:right;cursor:pointer;" onclick="front()" ondblclick="front1()"></p>
+<table cellpadding="5px" cellspacing="1px" onclick="window.open('time.html','_self')" style="color:white;cursor:pointer;border-collapse:collapse;padding:15px;text-align:center;margin:30px 60px;background-color:#2d3e59;border:5px solid white;">
+<tr style="background-color:#426972;"><td colspan="3"><span style="align:center;font-size:25px;font-family:Colonna MT;">Today's TimeTable</span></td></tr>
+<tr >
+<th>Time Slot</th>
+<th>Subject</th>
+<th>Faculty Name</th>
+</tr>
+<tr style="background-color:#426972;"><td>9-10 AM</td><td>Physics</td><td>Mrs. Neha Sharma</td></tr>
+<tr><td>10-11 Am</td><td>Physics Lab</td><td>Mrs. Neha Sharma</td></tr>
+<tr style="background-color:#426972;"><td>1-12 AM</td><td>Physics Lab</td><td>Mrs. Neha Sharma</td></tr>
+<tr><td>12-1 PM</td><td>English</td><td>Miss. Kirti</td></tr>
+<tr style="background-color:#426972;"><td>1-2 PM</td><td> Recess Break</td><td>--------------</td></tr>
+<tr><td>2-3 PM</td><td>Electrical</td><td>Mrs. Hardeep Kaur</td></tr>
+<tr style="background-color:#426972;"><td>3-4 PM</td><td>Electrical</td><td>Mrs. Hardeep Kaur</td></tr>
+<tr><td>4-5 PM</td><td>Mathematics</td><td>Mr. Milan Patra</td></tr>
+</table>
+<a href="attendance.html" style="text-decoration:none;color:white;">
+<table border="2px" cellpadding="5px" cellspacing="1px" style="border-collapse:collapse;padding:15px;text-align:center;margin:30px 150px;background-color:#2d3e59;border:5px solid;width:70%;">
+<tr style="background-color:#426972;"><td colspan="3"><span style="align:center;font-size:25px;font-family:Colonna MT;">Course Code & Attendance</span></td></tr>
+<tr >
+<td style="background:#ffffff;color:black;">CSE 106</td>
+<td style="background:#5a994e;color:white;">Creative Engineering Workshop (100%)</td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">CSE 202</td>
+<td style="background:#5a994e;color:white;">Object Oriented Programming (98%)<span style="background:gray;float:right;">&nbsp &nbsp &nbsp</span></td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">MTH 165</td>
+<td style="background:#5a994e;color:white;">Mathematics (90%)<span style="background:gray;float:right;">&nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp</span></td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">PHY 119</td>
+<td style="background:#5a994e;color:white;">Physics(100%)</td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">ECE 213</td>
+<td style="background:#5a994e;color:white;">Electrical (100%)</td>
+</tr>
+<tr >
+<td style="background:#ffffff;color:black;">ECE 216</td>
+<td style="background:#5a994e;color:white;">Electrical Laboratory (100%)</td>
+</tr>
+</table>
+</a>
+</div>
+</div>
+</body>
+</html>
